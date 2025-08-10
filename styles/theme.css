@@ -1,5 +1,0 @@
-:root{
-  --primary:#D71E28; --secondary:#F9F3EE; --accent:#FFBC38; --text:#243440; --muted:#6b7280;
-  --font-body: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-}
-body{font-family:var(--font-body); color:var(--text);}
