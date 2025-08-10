@@ -238,7 +238,8 @@
                                         </tbody>
                                     </table>
                                     
-                                    
+                                    <div class="card mb-3">
+                                        
                                         <div class="card-body p-2">
                                             <div class="d-flex align-items-center mb-2">
                                                 <div style="width: 120px">Customer Sentiment:</div>
@@ -259,9 +260,7 @@
                                     </div>
                                     
                                     <div class="card mb-2">
-                                        <div class="card-header bg-light p-2">
-                                            <h6 class="mb-0">AI Call Summary</h6>
-                                        </div>
+                                        
                                         <div class="card-body p-2">
                                             <p class="mb-1" id="call-summary">Customer called regarding opening a new business checking account for their startup consulting business. Agent explained the benefits of the Navigate account's higher transaction limits compared to Initiate. Customer expressed interest in mobile banking features and was particularly concerned about waiving monthly fees. Agent scheduled an in-branch appointment to complete the application.</p>
                                             <div class="mt-2 small">
@@ -271,18 +270,7 @@
                                         </div>
                                     </div>
                                     
-                                    <div id="optimize-insights" style="display: none;">
-                                        <div class="card border-primary">
-                                            <div class="card-header bg-primary text-white p-2">
-                                                <h6 class="mb-0">Premium Business Insights</h6>
-                                            </div>
-                                            <div class="card-body p-2">
-                                                <p class="mb-1"><strong>Business Context:</strong> <span id="business-context">First-time business owner starting a consulting firm with projected annual revenue of $250K. Previous banking with competitor.</span></p>
-                                                <p class="mb-1"><strong>Opportunity Score:</strong> <span class="badge badge-success">87/100</span> <span class="text-success font-weight-bold">High Value</span></p>
-                                                <p class="mb-0"><strong>Additional Products:</strong> <span id="cross-sell">Business credit card (85% match), merchant services (72% match)</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -1226,6 +1214,7 @@
             });
         });
     </script>
+
 
 <!-- Vendor JS: local first, CDN fallback -->
 <script src="./vendor/bootstrap.bundle.min.js" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'"></script>

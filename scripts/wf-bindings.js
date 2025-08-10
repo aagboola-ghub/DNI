@@ -9,6 +9,17 @@ export function bind(config, state){
   const r = document.documentElement.style;
   const p = config.palette || {};
   Object.entries(p).forEach(([k,v]) => r.setProperty(`--${k}`, v));
+  if (sidEl && sidEl.closest) {
+    const row = sidEl.closest('tr'); if (row) row.remove();
+  }
+  document.querySelectorAll('h6').forEach(h => {
+    if (h.textContent && h.textContent.trim().toLowerCase() === 'marchex ai insights') {
+      const card = h.nextElementSibling;
+      if (card && card.classList && card.classList.contains('card')) card.remove();
+      h.remove();
+    }
+  });
+
 
   // Initial UTM/session display
   updateSession(config, state);
@@ -89,11 +100,14 @@ function activateMatching(sel, val){
   if (el) el.classList.add('active');
 }
 
-function updateNumber(config, state){
+
+// Reflect in left panel tracking number
+const __origUpdate = updateNumber;
+updateNumber = function(config, state){
   const number = resolveNumber(config.dniRules || [], state);
   applyToDom(number);
   const ids = ['tracking-number','tracking-number-value','trackingNumber','tracking_number'];
   ids.forEach(id => { const el = document.getElementById(id); if (el) el.textContent = number || 'Not yet assigned'; });
   const link = document.getElementById('tracking-number-link');
   if (link && number) link.setAttribute('href', `tel:${number.replace(/\D/g,'')}`);
-}
+};
