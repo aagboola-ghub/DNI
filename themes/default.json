@@ -1,0 +1,16 @@
+{
+  "id": "default",
+  "palette": {
+    "primary": "#D71E28",
+    "secondary": "#F9F3EE",
+    "accent": "#FFBC38",
+    "text": "#243440",
+    "muted": "#6b7280"
+  },
+  "shadows": {
+    "soft": "0 8px 24px rgba(0,0,0,.08)"
+  },
+  "radius": {
+    "xl": "1rem"
+  }
+}
