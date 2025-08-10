@@ -1,0 +1,18 @@
+:root{
+  --brand-bg:#ffffff;
+  --brand-fg:#222222;
+  --brand-primary:#c40404;
+  --brand-secondary:#f6d365;
+  --brand-accent:#9e1b1b;
+  --card-bg:#ffffff;
+  --border:#e5e7eb;
+}
+body { background: var(--brand-bg); color: var(--brand-fg); }
+.navbar { border-bottom:1px solid var(--border); }
+.card { border-color: var(--border); }
+.btn-primary{
+  background: var(--brand-primary); border-color: var(--brand-primary);
+}
+a{ color: var(--brand-primary); }
+.badge-brand{ background: var(--brand-secondary); color:#222; }
+.dni-highlight{ background: #fff4d6; padding:.1rem .25rem; border-radius:.25rem; }

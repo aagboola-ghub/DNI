@@ -1,0 +1,69 @@
+{
+  "id": "wells-fargo",
+  "label": "Wells Fargo (Demo)",
+  "brand": {
+    "logo": "./assets/logos/wf.svg",
+    "tokens": {
+      "--brand-bg": "#ffffff",
+      "--brand-fg": "#222222",
+      "--brand-primary": "#c40404",
+      "--brand-secondary": "#f6d365",
+      "--brand-accent": "#9e1b1b"
+    }
+  },
+  "numbers": {
+    "default": "+1 (800) 555-0100",
+    "paid_search": "+1 (800) 555-0101",
+    "organic_search": "+1 (800) 555-0102",
+    "facebook": "+1 (800) 555-0103",
+    "microsoft": "+1 (800) 555-0104"
+  },
+  "dniRules": [
+    {
+      "id": "paid-google",
+      "when": {
+        "source": "google",
+        "campaignType": "paid"
+      },
+      "number": "paid_search"
+    },
+    {
+      "id": "organic-google",
+      "when": {
+        "source": "google",
+        "campaignType": "organic"
+      },
+      "number": "organic_search"
+    },
+    {
+      "id": "facebook-any",
+      "when": {
+        "source": "facebook"
+      },
+      "number": "facebook"
+    },
+    {
+      "id": "microsoft-any",
+      "when": {
+        "source": "microsoft"
+      },
+      "number": "microsoft"
+    },
+    {
+      "id": "fallback",
+      "when": {},
+      "number": "default"
+    }
+  ],
+  "journey": {
+    "defaultSource": "google",
+    "defaultCampaignType": "paid",
+    "trackingMode": "session",
+    "pages": [
+      "home",
+      "products",
+      "product-detail",
+      "contact"
+    ]
+  }
+}
