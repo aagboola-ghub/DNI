@@ -1,0 +1,30 @@
+{
+  "cases": [
+    {
+      "input": {
+        "source": "google",
+        "campaignType": "paid"
+      },
+      "expected": "1-800-416-8658"
+    },
+    {
+      "input": {
+        "source": "google",
+        "campaignType": "organic"
+      },
+      "expected": "1-866-902-9181"
+    },
+    {
+      "input": {
+        "source": "facebook"
+      },
+      "expected": "1-866-902-9181"
+    },
+    {
+      "input": {
+        "source": "microsoft"
+      },
+      "expected": "1-800-416-8658"
+    }
+  ]
+}
