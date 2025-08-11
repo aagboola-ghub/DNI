@@ -1,0 +1,81 @@
+/* 
+ * Wells Fargo Brand Theme
+ * Brand-specific styles for Wells Fargo
+ */
+
+:root {
+    /* Wells Fargo Brand Colors */
+    --brand-primary: #D71E28;
+    --brand-primary-dark: #b51922;
+    --brand-secondary: #FFBC38;
+    --brand-tertiary: #003366;
+    
+    /* Wells Fargo Specific */
+    --wf-red: #D71E28;
+    --wf-gold: #FFBC38;
+    --wf-dark-blue: #003366;
+}
+
+/* Brand Navbar */
+.brand-navbar {
+    background-color: var(--brand-primary);
+}
+
+.navbar-brand {
+    font-family: Arial, sans-serif !important;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Stagecoach Logo */
+.brand-logo-container::before {
+    content: "";
+    display: inline-block;
+    background-color: var(--wf-red);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.brand-logo-container::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 16px;
+    height: 12px;
+    background-color: var(--wf-gold);
+}
+
+.stagecoach {
+    display: inline-block;
+    background-color: var(--wf-red);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    margin-right: 5px;
+}
+
+.stagecoach:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 16px;
+    height: 12px;
+    background-color: var(--wf-gold);
+}
+
+/* Brand Name */
+.brand-name::before {
+    content: "Wells Fargo";
+    font-weight: bold;
+}
+
+.brand-name::after {
+    content: " Business Banking";
+    font-weight: normal;
+}

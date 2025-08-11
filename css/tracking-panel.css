@@ -1,0 +1,100 @@
+/* 
+ * Tracking Panel Styles
+ * Styles for the left-side tracking data panel
+ */
+
+/* Panel Structure */
+.tracking-panel .card {
+    border: 0;
+    border-radius: 0;
+}
+
+.tracking-panel .card-header {
+    background-color: var(--marchex-blue);
+    color: white;
+}
+
+.tracking-panel .card-body {
+    padding: 15px;
+}
+
+/* Demo Controls */
+#demo-controls .card-body {
+    padding: 15px;
+}
+
+.traffic-source-btn.active {
+    background-color: var(--marchex-dark);
+    color: white;
+    border-color: var(--marchex-dark);
+}
+
+.tracking-type-toggle .btn.active {
+    background-color: var(--marchex-dark);
+    color: white;
+    border-color: var(--marchex-dark);
+}
+
+/* Tracking Table */
+.tracking-table {
+    font-size: 0.85rem;
+}
+
+.tracking-table td, 
+.tracking-table th {
+    padding: 0.5rem;
+}
+
+.highlight-tracking {
+    background-color: #e6f7ff;
+    border-left: 3px solid var(--marchex-blue);
+}
+
+/* Campaign Data */
+.campaign-data-row {
+    display: none;
+}
+
+/* Panel Tabs */
+.panel-tab-content {
+    display: none;
+}
+
+.panel-tab-content.active {
+    display: block;
+}
+
+.wf-tablist .nav-link.active {
+    border-bottom: 3px solid var(--brand-primary);
+    color: var(--brand-primary);
+    font-weight: bold;
+}
+
+.wf-tablist .nav-link {
+    color: #333;
+}
+
+/* Call Info Panel */
+.call-info-panel {
+    background-color: #f8faff;
+    border-left: 4px solid var(--marchex-blue);
+}
+
+/* Call Analytics Cards */
+.call-info-panel .card-header {
+    background-color: #f8f9fa;
+}
+
+.call-info-panel .progress {
+    height: 20px;
+}
+
+/* Optimize Insights */
+#optimize-insights .card {
+    border-color: var(--brand-primary);
+}
+
+#optimize-insights .card-header {
+    background-color: var(--brand-primary);
+    color: white;
+}

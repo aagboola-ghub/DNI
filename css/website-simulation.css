@@ -1,0 +1,69 @@
+/* 
+ * Website Simulation Styles
+ * Styles for the right-side website display
+ */
+
+/* Page Display Bar */
+.page-display {
+    font-size: 0.85rem;
+    color: #666;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Phone Numbers */
+.phone-number {
+    color: var(--brand-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Search Page Styles */
+.wf-search-btn {
+    background-color: var(--brand-primary);
+    color: white;
+    border-color: var(--brand-primary);
+}
+
+.wf-search-btn:hover {
+    background-color: var(--brand-primary-dark);
+    border-color: var(--brand-primary-dark);
+    color: white;
+}
+
+.wf-ad {
+    border-left: 3px solid var(--brand-primary);
+    padding-left: 15px;
+}
+
+/* Wells Fargo Buttons */
+.wf-btn {
+    background-color: var(--brand-primary);
+    color: white;
+    border-color: var(--brand-primary);
+}
+
+.wf-btn:hover {
+    background-color: var(--brand-primary-dark);
+    border-color: var(--brand-primary-dark);
+    color: white;
+}
+
+/* Account Cards */
+.account-card {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.account-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Feature Badge */
+.feature-badge {
+    background-color: var(--brand-secondary);
+    color: black;
+    font-size: 0.75rem;
+}

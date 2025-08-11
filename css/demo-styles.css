@@ -1,0 +1,92 @@
+/* 
+ * Demo Styles - Core styles for the DNI Demo
+ * Extracted from the original monolithic demo
+ */
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif !important;
+}
+
+* {
+    font-family: Arial, sans-serif !important;
+}
+
+/* Progress Indicator */
+.progress-indicator {
+    height: 10px;
+    margin-bottom: 0;
+}
+
+.progress-indicator .progress-bar {
+    transition: width 0.5s ease-in-out;
+}
+
+/* Main Layout */
+.tracking-panel {
+    border-right: 1px solid #dee2e6;
+    height: calc(100vh - 110px);
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+
+.website-panel {
+    height: calc(100vh - 110px);
+    overflow-y: auto;
+    background-color: white;
+}
+
+/* Animations */
+.changed-row {
+    animation: highlight 1.5s;
+}
+
+@keyframes highlight {
+    0% { background-color: #FFFF99; }
+    100% { background-color: transparent; }
+}
+
+/* Utility Classes */
+.diff-highlight {
+    background-color: #FFFF99;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+/* Modal Styles */
+.modal-marchex .modal-header {
+    background-color: var(--marchex-blue);
+    color: white;
+}
+
+/* Tooltips */
+.tooltip-icon {
+    color: var(--marchex-blue);
+    cursor: pointer;
+}
+
+/* Data Source Indicator */
+.data-source-indicator {
+    background-color: rgba(0, 120, 212, 0.1);
+    border-left: 3px solid var(--marchex-blue);
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Stage Badge */
+.stage-badge {
+    background-color: var(--marchex-blue);
+    color: white;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* Marchex Brand Colors */
+:root {
+    --marchex-blue: #0078D4;
+    --marchex-dark: #004E8C;
+}

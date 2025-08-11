@@ -1,0 +1,179 @@
+{
+  "brand": {
+    "id": "wells-fargo",
+    "name": "Wells Fargo",
+    "displayName": "Wells Fargo Business Banking",
+    "domain": "wellsfargo.com",
+    "tagline": "Let's Grow Your Business, Together",
+    "description": "Find the right financial solutions for your business needs.",
+    "logo": {
+      "type": "stagecoach",
+      "text": "Wells Fargo"
+    },
+    "colors": {
+      "primary": "#D71E28",
+      "secondary": "#FFBC38",
+      "tertiary": "#003366"
+    }
+  },
+  
+  "phoneNumbers": {
+    "main": "1-800-416-8658",
+    "premium": "1-866-902-9181",
+    "existing": "1-800-225-5935",
+    "hours": "Monday - Friday: 8am - 8pm (Central Time)"
+  },
+  
+  "searchResults": {
+    "adTitle": "Small Business Checking | Wells Fargo",
+    "adUrl": "wellsfargo.com/biz/",
+    "adDescription": "Open a Business Checking Account with Wells Fargo. Enjoy Online Banking, Mobile App & Trusted Support. Find the Right Account for Your Business Needs.",
+    "searchTerm": "small business checking account"
+  },
+  
+  "navigation": [
+    {"label": "Home", "id": "home"},
+    {"label": "Checking", "id": "checking"},
+    {"label": "Savings", "id": "savings"},
+    {"label": "Loans", "id": "loans"},
+    {"label": "Merchant Services", "id": "merchant"}
+  ],
+  
+  "products": {
+    "checking": {
+      "title": "Small Business Checking Accounts",
+      "subtitle": "Choose the right account for your business needs.",
+      "accounts": [
+        {
+          "id": "initiate",
+          "name": "Initiate Business Checking",
+          "badge": "Basic",
+          "description": "For small businesses with basic banking needs.",
+          "monthlyFee": "$10",
+          "feeWaiver": "waivable with $500 minimum daily balance",
+          "features": [
+            "Up to 100 transactions per month at no charge",
+            "Up to $5,000 in cash deposits per month with no cash deposit processing fee",
+            "Digital banking tools to manage your business on the go",
+            "Debit card with Zero Liability protection"
+          ],
+          "whyChoose": "Perfect for new businesses or those with basic banking needs requiring simple cash management solutions.",
+          "additionalInfo": "The Initiate account provides essential business banking services at a low monthly cost, with multiple ways to waive the fee."
+        },
+        {
+          "id": "navigate",
+          "name": "Navigate Business Checking",
+          "badge": "Popular",
+          "description": "For growing businesses with moderate transaction volume.",
+          "monthlyFee": "$25",
+          "feeWaiver": "waivable with $10,000 minimum balance",
+          "features": [
+            "Up to 250 transactions per month at no charge",
+            "Up to $20,000 in cash deposits per month with no cash deposit processing fee",
+            "Free incoming wire transfers",
+            "Mobile banking and mobile check deposit"
+          ],
+          "whyChoose": "Perfect for businesses that have outgrown basic checking but don't need complex treasury management services.",
+          "additionalInfo": "The Navigate account grows with your business, adapting to your changing needs."
+        },
+        {
+          "id": "optimize",
+          "name": "Optimize Business Checking",
+          "badge": "Premium",
+          "description": "For established businesses with complex needs.",
+          "monthlyFee": "$75",
+          "feeWaiver": "waivable with earnings allowance",
+          "features": [
+            "Access to treasury management services",
+            "No fees for stop payments, cashier's checks, and money orders",
+            "Up to five outgoing wires per statement period at no charge",
+            "Relationship pricing on business loans and lines of credit"
+          ],
+          "whyChoose": "Designed for established businesses with sophisticated banking needs and high transaction volume.",
+          "additionalInfo": "Access to dedicated relationship managers and advanced treasury management tools.",
+          "isPremium": true
+        }
+      ]
+    },
+    
+    "otherProducts": [
+      {
+        "title": "Business Credit Cards",
+        "description": "Reward your business spending.",
+        "cta": "Explore Cards"
+      },
+      {
+        "title": "Merchant Services",
+        "description": "Accept payments anywhere your business takes you.",
+        "cta": "Get Started"
+      }
+    ]
+  },
+  
+  "tracking": {
+    "campaign": {
+      "paid": {
+        "utmSource": "google",
+        "utmMedium": "cpc",
+        "utmCampaign": "bizbanking_2025_q2",
+        "utmTerm": "small business checking account"
+      },
+      "organic": {
+        "utmSource": "google",
+        "utmMedium": "organic",
+        "utmCampaign": "(not set)",
+        "utmTerm": "(not set)"
+      }
+    }
+  },
+  
+  "callSimulation": {
+    "successTitle": "Call Successfully Tracked by Marchex",
+    "defaultSentiment": {
+      "customer": 85,
+      "agent": 92,
+      "label": "Positive",
+      "positives": "Solution-focused, helpful explanations, good rapport"
+    },
+    "accounts": {
+      "initiate": {
+        "sentiment": {
+          "customer": 78,
+          "agent": 85,
+          "label": "Positive",
+          "positives": "Clear explanations, patience with questions"
+        },
+        "summary": "New small business owner called inquiring about the most affordable checking option. Agent explained the Initiate account benefits and fee waiver options. Customer had questions about mobile deposit limits and online banking features. Agent provided detailed explanations and helped customer understand minimum balance requirements.",
+        "intent": "Basic Account Inquiry",
+        "outcome": "Information Provided"
+      },
+      "navigate": {
+        "sentiment": {
+          "customer": 85,
+          "agent": 92,
+          "label": "Positive",
+          "positives": "Solution-focused, helpful explanations, good rapport"
+        },
+        "summary": "Customer called regarding opening a new business checking account for their startup consulting business. Agent explained the benefits of the Navigate account's higher transaction limits compared to Initiate. Customer expressed interest in mobile banking features and was particularly concerned about waiving monthly fees. Agent scheduled an in-branch appointment to complete the application.",
+        "intent": "New Account Inquiry",
+        "outcome": "Appointment Scheduled"
+      },
+      "optimize": {
+        "sentiment": {
+          "customer": 92,
+          "agent": 95,
+          "label": "Very Positive",
+          "positives": "Personalized service, comprehensive explanations, excellent rapport"
+        },
+        "summary": "Business owner called regarding premium checking options for their established manufacturing business. Agent provided detailed explanation of Optimize account treasury management services and earnings credit opportunities. Customer appreciated the relationship manager assignment and discussed international wire transfer needs. Agent scheduled a meeting with treasury specialist and relationship manager.",
+        "intent": "Premium Service Inquiry",
+        "outcome": "Specialist Meeting Scheduled",
+        "premiumInsights": {
+          "businessContext": "Established manufacturing business with international operations and $4.2M annual revenue. Seeking improved treasury management.",
+          "opportunityScore": 87,
+          "crossSell": "Business credit line (94% match), international services (88% match), merchant services (76% match)"
+        }
+      }
+    }
+  }
+}
