@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Wells Fargo (WF)",
+    "path": "configs/wells-fargo.json"
+  },
+  {
+    "name": "Acme Plumbing",
+    "path": "configs/acme-plumbing.json"
+  }
+]

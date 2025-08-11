@@ -1,0 +1,6 @@
+
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>DNI Demo</title><link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"><link rel="stylesheet" href="styles/base.css"><link rel="stylesheet" id="brand-theme"></head>
+<body><div id="app"></div>
+<script type="module">import { boot } from './scripts/app.js'; const u=new URL(location.href); const cfg=u.searchParams.get('config')||'configs/wells-fargo.json'; boot(cfg);</script>
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script></body></html>
