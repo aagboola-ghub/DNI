@@ -1,9 +1,0 @@
-
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DNI Demo Launcher</title><link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"><link rel="stylesheet" href="styles/base.css"></head>
-<body><div class="container"><div class="card"><div class="card-header">Choose a Demo</div><div class="card-body" id="list">Loading…</div></div></div>
-<script type="module">
-  const list=document.getElementById('list');
-  const res=await fetch('configs/index.json'); const items=await res.json();
-  list.innerHTML=items.map(i=>`<p><a class="btn btn-primary" href="index.html?config=${encodeURIComponent(i.path)}">${i.name}</a></p>`).join('');
-</script></body></html>
