@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "id": "insuranceco",
+    "label": "InsuranceCo \u2014 Quotes",
+    "version": "1.0.0"
+  },
+  "branding": {
+    "logo": "assets/logos/wf.svg",
+    "favicon": "assets/icons/wf.ico"
+  },
+  "palette": {
+    "primary": "#7c3aed",
+    "secondary": "#f5f3ff",
+    "accent": "#22c55e",
+    "text": "#1f2937",
+    "muted": "#6b7280"
+  },
+  "copy": {
+    "heroHeadline": "Protect what matters most",
+    "ctaPrimary": "Get a quote"
+  },
+  "phone": {
+    "pool": [
+      "(877) 222-1000",
+      "(877) 222-2000"
+    ],
+    "formatMask": "(###) ###-####"
+  },
+  "dniRules": [
+    {
+      "when": {
+        "source": "google",
+        "campaignType": "paid"
+      },
+      "number": "(877) 222-1000"
+    },
+    {
+      "when": {
+        "source": "google",
+        "campaignType": "organic"
+      },
+      "number": "(877) 222-2000"
+    },
+    {
+      "when": {
+        "source": {
+          "$in": [
+            "facebook",
+            "microsoft"
+          ]
+        }
+      },
+      "number": "(877) 222-2000"
+    }
+  ],
+  "presets": {
+    "trafficSources": [
+      "google",
+      "facebook",
+      "microsoft"
+    ],
+    "trackingModes": [
+      "session",
+      "channel"
+    ],
+    "default": {
+      "source": "google",
+      "campaignType": "paid",
+      "trackingMode": "session"
+    }
+  },
+  "features": {
+    "fbclidOnOrganic": false
+  }
+}
