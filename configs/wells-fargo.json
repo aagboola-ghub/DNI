@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "id": "wells-fargo",
+    "label": "Wells Fargo \u2014 Business Banking",
+    "version": "1.0.0"
+  },
+  "branding": {
+    "logo": "assets/logos/wf.svg",
+    "favicon": "assets/icons/wf.ico"
+  },
+  "palette": {
+    "primary": "#D71E28",
+    "secondary": "#F9F3EE",
+    "accent": "#FFBC38",
+    "text": "#243440",
+    "muted": "#6b7280"
+  },
+  "copy": {
+    "heroHeadline": "Business banking that scales with you",
+    "ctaPrimary": "Talk to a specialist"
+  },
+  "phone": {
+    "pool": [
+      "1-800-416-8658",
+      "1-866-902-9181",
+      "1-800-555-0199"
+    ],
+    "formatMask": "(###) ###-####"
+  },
+  "dniRules": [
+    {
+      "when": {
+        "source": "google",
+        "campaignType": "paid"
+      },
+      "number": "1-800-416-8658"
+    },
+    {
+      "when": {
+        "source": "google",
+        "campaignType": "organic"
+      },
+      "number": "1-866-902-9181"
+    },
+    {
+      "when": {
+        "source": "facebook"
+      },
+      "number": "1-866-902-9181"
+    },
+    {
+      "when": {
+        "source": "microsoft"
+      },
+      "number": "1-800-416-8658"
+    }
+  ],
+  "presets": {
+    "trafficSources": [
+      "google",
+      "facebook",
+      "microsoft"
+    ],
+    "trackingModes": [
+      "session",
+      "channel"
+    ],
+    "default": {
+      "source": "google",
+      "campaignType": "paid",
+      "trackingMode": "session"
+    }
+  },
+  "features": {
+    "fbclidOnOrganic": false
+  }
+}
