@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>DNI Self-Test</title></head><body>
+<h1 class="h5">DNI Self-Test</h1><pre id="out"></pre>
+<script type="module">
+  import { resolveNumber } from '../scripts/dni.js';
+  async function run(){
+    const res = await fetch('./rules-fixtures.json'); const data = await res.json();
+    const cfg = await (await fetch('../configs/wells-fargo.json')).json();
+    const out = document.getElementById('out'); let pass=0;
+    for(const c of data.cases){
+      const got = resolveNumber(cfg.dniRules, c.input);
+      const ok = got === c.expected; if(ok) pass++;
+      out.textContent += `${ok?'✔':'✘'} ${JSON.stringify(c.input)} -> ${got} (expected ${c.expected})\n`;
+    }
+    out.textContent += `\nPassed ${pass}/${data.cases.length}`;
+  }
+  run();
+</script>
+</body></html>
